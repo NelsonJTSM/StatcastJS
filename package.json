@@ -1,9 +1,9 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "statcast-js",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "A javascript library for Statcast data.",
   "engines": {
-    "node": ">= 14.16 <15"
+    "node": ">= 16.6 <17"
   },
   "devDependencies": {
     "@types/jest": "~26.0.23",
@@ -23,19 +23,16 @@
   "scripts": {
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
-    "prebuild": "npm run lint",
+    "prebuild": "yarn run lint",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <github@jakubsynowiec.info>",
+  "author": "Nelson Torres <NelsonJTSM@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.3.0"
-  },
-  "volta": {
-    "node": "14.16.1"
   }
 }
